@@ -80,10 +80,10 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
   List* list=createList();
-  for(int i=0; i<2;i++){
-    for(int j=0; j<2;j++){
+  for(int i=0; i<3;i++){
+    for(int j=0; j<3;j++){
       if(n->sudo[i][j]==0){
-        for(int k=1;k<=2;k++){
+        for(int k=1;k<=3;k++){
           Node* copialist= copy(n);
           copialist->sudo[i][j]=k;
           pushBack(list,copialist);
