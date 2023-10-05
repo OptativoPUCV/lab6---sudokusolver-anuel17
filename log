@@ -463,3 +463,19 @@ sudoku.c:132:6: error: ‘con’ undeclared (first use in this function); did yo
 cc1: all warnings being treated as errors
 Compilation failed
 8def1a7
+Thu 05 Oct 2023 03:18:50 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:129:9: error: ‘isEmpty’ undeclared (first use in this function); did you mean ‘is_empty’?
+  129 |   while(isEmpty != 0){
+      |         ^~~~~~~
+      |         is_empty
+sudoku.c:129:9: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:132:6: error: ‘con’ undeclared (first use in this function); did you mean ‘cont’?
+  132 |     *con++;
+      |      ^~~
+      |      cont
+Compilation failed
+808f9fa
