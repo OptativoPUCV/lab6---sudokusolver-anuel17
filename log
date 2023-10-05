@@ -145,3 +145,9 @@ sudoku.c:53:23: error: ‘arregloFila[num]’ may be used uninitialized in this 
 cc1: all warnings being treated as errors
 Compilation failed
 6923c2b
+Thu 05 Oct 2023 01:56:27 AM UTC: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  2|4
+total_score: 15/70
+1ae96c7

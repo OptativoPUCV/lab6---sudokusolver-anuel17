@@ -52,6 +52,8 @@ int is_valid(Node* n){
       if(num != 0){
         if(arregloFila[num]==1){
           return 0;
+        }else{
+          arregloFila[num]= 1;
         }
       }
     }
