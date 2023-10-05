@@ -30,3 +30,31 @@ sudoku.c:54:7: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 a8d395e
+Thu 05 Oct 2023 01:37:06 AM UTC: 
+ sudoku.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:56:10: error: ‘m’ undeclared (first use in this function)
+   56 |       if(m-<sudo[i][j]==0){
+      |          ^
+sudoku.c:56:10: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:56:12: error: expected expression before ‘<’ token
+   56 |       if(m-<sudo[i][j]==0){
+      |            ^
+sudoku.c:60:11: error: implicit declaration of function ‘insertFront’ [-Werror=implicit-function-declaration]
+   60 |           insertFront(list,copiaList);
+      |           ^~~~~~~~~~~
+sudoku.c:60:28: error: ‘copiaList’ undeclared (first use in this function); did you mean ‘copialist’?
+   60 |           insertFront(list,copiaList);
+      |                            ^~~~~~~~~
+      |                            copialist
+sudoku.c:62:20: error: expected ‘;’ before ‘}’ token
+   62 |         return list
+      |                    ^
+      |                    ;
+   63 |       }
+      |       ~             
+cc1: all warnings being treated as errors
+Compilation failed
+b015bd0
