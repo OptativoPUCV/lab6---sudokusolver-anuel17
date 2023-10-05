@@ -157,3 +157,31 @@ Thu 05 Oct 2023 01:57:06 AM UTC:
  tests:  5|3
 total_score: 35/70
 460ceed
+Thu 05 Oct 2023 02:22:47 AM UTC: 
+ sudoku.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:62:21: error: expected ‘;’ before ‘:’ token
+   62 |   for(int k = 0; k<9: k++){
+      |                     ^
+      |                     ;
+sudoku.c:64:9: error: ‘p’ undeclared (first use in this function)
+   64 |     for(p=0;p<9;p++){
+      |         ^
+sudoku.c:64:9: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:67:20: error: ‘nodo’ undeclared (first use in this function)
+   67 |       printf("%d ",nodo->sudo[i][j]);
+      |                    ^~~~
+sudoku.c:66:11: error: variable ‘j’ set but not used [-Werror=unused-but-set-variable]
+   66 |       int j=3*(k%3) + (p%3) ;
+      |           ^
+sudoku.c:65:11: error: variable ‘i’ set but not used [-Werror=unused-but-set-variable]
+   65 |       int i=3*(k/3) + (p/3) ;
+      |           ^
+sudoku.c:63:9: error: unused variable ‘subMatriz’ [-Werror=unused-variable]
+   63 |     int subMatriz[10];
+      |         ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+834b5b9
