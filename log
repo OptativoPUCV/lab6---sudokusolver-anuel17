@@ -134,3 +134,14 @@ sudoku.c:48:14: error: expected ‘;’ before ‘:’ token
       |              ;
 Compilation failed
 f780f42
+Thu 05 Oct 2023 01:55:42 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:53:23: error: ‘arregloFila[num]’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   53 |         if(arregloFila[num]==1){
+      |            ~~~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6923c2b
