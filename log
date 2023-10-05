@@ -349,3 +349,13 @@ Thu 05 Oct 2023 02:59:57 AM UTC:
  tests:  5|3
 total_score: 35/70
 d06a6d5
+Thu 05 Oct 2023 03:08:41 AM UTC: 
+ sudoku.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:101:23: error: subscripted value is neither array nor pointer nor vector
+  101 |           copialist[i][j]=k;
+      |                       ^
+Compilation failed
+1ec3fe1
