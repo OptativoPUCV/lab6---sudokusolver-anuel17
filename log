@@ -203,3 +203,18 @@ sudoku.c:67:12: error: expected identifier before ‘=’ token
       |            ^
 Compilation failed
 090cf62
+Thu 05 Oct 2023 02:24:44 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:62:21: error: expected ‘;’ before ‘:’ token
+   62 |   for(int k = 0; k<9: k++){
+      |                     ^
+      |                     ;
+sudoku.c:64:9: error: ‘p’ undeclared (first use in this function)
+   64 |     for(p=0;p<9;p++){
+      |         ^
+sudoku.c:64:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2d3a016

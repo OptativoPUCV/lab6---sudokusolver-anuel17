@@ -64,7 +64,7 @@ int is_valid(Node* n){
     for(p=0;p<9;p++){
       int a=3*(k/3) + (p/3) ;
       int b=3*(k%3) + (p%3) ;
-      num->= n->sudo[a][b];
+      num = n->sudo[a][b];
       if(num != 0){
         if(subMatriz[num] == 1){
           return 0;
