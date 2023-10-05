@@ -185,3 +185,21 @@ sudoku.c:63:9: error: unused variable ‘subMatriz’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 834b5b9
+Thu 05 Oct 2023 02:24:30 AM UTC: 
+ sudoku.c | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:62:21: error: expected ‘;’ before ‘:’ token
+   62 |   for(int k = 0; k<9: k++){
+      |                     ^
+      |                     ;
+sudoku.c:64:9: error: ‘p’ undeclared (first use in this function)
+   64 |     for(p=0;p<9;p++){
+      |         ^
+sudoku.c:64:9: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:67:12: error: expected identifier before ‘=’ token
+   67 |       num->= n->sudo[a][b];
+      |            ^
+Compilation failed
+090cf62
