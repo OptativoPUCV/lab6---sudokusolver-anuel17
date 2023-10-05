@@ -59,7 +59,7 @@ int is_valid(Node* n){
     }
   }
 
-  for(int k = 0; k<3; k++){
+  for(int k = 0; k<9; k++){
     int subMatriz[10] = {0};
     for(int p=0;p<9;p++){
       int a=3*(k/3) + (p/3) ;
