@@ -129,7 +129,7 @@ Node* DFS(Node* initial, int* cont){
   while(is_empty != 0){
     Node* actual = front(stack);
     popFront(stack);
-    *cotn++;
+    *cont++;
     if(is_final(actual)){
       return actual;
     }

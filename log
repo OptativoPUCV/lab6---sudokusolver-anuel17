@@ -495,3 +495,17 @@ sudoku.c:132:6: note: each undeclared identifier is reported only once for each 
 cc1: all warnings being treated as errors
 Compilation failed
 381d1e9
+Thu 05 Oct 2023 03:19:12 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:129:18: error: the comparison will always evaluate as ‘true’ for the address of ‘is_empty’ will never be NULL [-Werror=address]
+  129 |   while(is_empty != 0){
+      |                  ^~
+sudoku.c:132:5: error: value computed is not used [-Werror=unused-value]
+  132 |     *cont++;
+      |     ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2963611
