@@ -140,7 +140,6 @@ Node* DFS(Node* initial, int* cont){
       pushFront(stack,copia);
     }
     free(actual);
-    clearList(adj_nodes);
     free(adj_nodes);
   }
   
