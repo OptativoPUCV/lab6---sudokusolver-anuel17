@@ -265,3 +265,13 @@ Thu 05 Oct 2023 02:32:38 AM UTC:
  tests:  5|3
 total_score: 35/70
 57da8bc
+Thu 05 Oct 2023 02:35:34 AM UTC: 
+ sudoku.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:65:14: error: expected expression before ‘<’ token
+   65 |       num= n-<sudo[i][j];
+      |              ^
+Compilation failed
+9c9aae4

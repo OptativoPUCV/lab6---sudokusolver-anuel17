@@ -59,6 +59,20 @@ int is_valid(Node* n){
     }
   }
 
+  for(j=0;j<9;j++){
+    int arregloCol[10]={0};
+    for(i=0;i<9;i++){
+      num= n-<sudo[i][j];
+      if(num != 0){
+        if(arregloCol[num] == 1){
+          return 0;
+        }else{
+          arregloCol[num]= 1;
+        }
+      }
+    }
+  }
+  
   for(int k = 0; k<9; k++){
     int subMatriz[10] = {0};
     for(int p=0;p<9;p++){
