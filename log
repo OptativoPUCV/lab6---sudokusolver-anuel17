@@ -229,3 +229,9 @@ sudoku.c:69:21: error: ‘subMatriz[num]’ may be used uninitialized in this fu
 cc1: all warnings being treated as errors
 Compilation failed
 986f606
+Thu 05 Oct 2023 02:25:40 AM UTC: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  2|4
+total_score: 15/70
+b1b9a2e

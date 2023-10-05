@@ -68,6 +68,8 @@ int is_valid(Node* n){
       if(num != 0){
         if(subMatriz[num] == 1){
           return 0;
+        }else{
+          subMatriz[num] = 1;
         }
       }
       
