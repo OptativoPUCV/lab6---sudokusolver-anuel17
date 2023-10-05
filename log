@@ -218,3 +218,14 @@ sudoku.c:64:9: error: ‘p’ undeclared (first use in this function)
 sudoku.c:64:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2d3a016
+Thu 05 Oct 2023 02:25:03 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:69:21: error: ‘subMatriz[num]’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   69 |         if(subMatriz[num] == 1){
+      |            ~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+986f606
