@@ -479,3 +479,19 @@ sudoku.c:132:6: error: ‘con’ undeclared (first use in this function); did yo
       |      cont
 Compilation failed
 808f9fa
+Thu 05 Oct 2023 03:19:06 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:129:18: error: the comparison will always evaluate as ‘true’ for the address of ‘is_empty’ will never be NULL [-Werror=address]
+  129 |   while(is_empty != 0){
+      |                  ^~
+sudoku.c:132:6: error: ‘cotn’ undeclared (first use in this function); did you mean ‘cont’?
+  132 |     *cotn++;
+      |      ^~~~
+      |      cont
+sudoku.c:132:6: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+381d1e9
