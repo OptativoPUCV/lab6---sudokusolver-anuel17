@@ -123,7 +123,7 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-  list* stack= creatList();
+  List* stack= creatList();
   pushFront(stack,initial);
 
   while(isEmpty != 0){
