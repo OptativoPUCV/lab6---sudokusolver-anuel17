@@ -311,3 +311,14 @@ Thu 05 Oct 2023 02:40:49 AM UTC:
  tests:  5|3
 total_score: 35/70
 e7c30c2
+Thu 05 Oct 2023 02:58:26 AM UTC: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:81:20: error: ‘nodo’ undeclared (first use in this function)
+   81 |       printf("%d ",nodo->sudo[i][j]);
+      |                    ^~~~
+sudoku.c:81:20: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+098e81d
