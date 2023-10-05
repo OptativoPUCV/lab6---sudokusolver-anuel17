@@ -136,7 +136,7 @@ Node* DFS(Node* initial, int* cont){
     List* adj_nodes = get_adj_nodes(actual);
     Node* copia;
     while((copia = front(adj_nodes)) != NULL){
-      poppFront(adj_nodes);
+      popFront(adj_nodes);
       pushFront(stack,copia);
     }
   }
