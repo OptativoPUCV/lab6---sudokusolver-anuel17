@@ -46,7 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
   int i,j,num;
   for(i=0;i<9;i++){
-    int arregloFila[10];
+    int arregloFila[10] = {0};
     for(j=0;j<9;j++){
       num= n->sudo[i][j];
       if(num != 0){
