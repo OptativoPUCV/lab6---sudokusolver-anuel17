@@ -322,3 +322,13 @@ sudoku.c:81:20: error: ‘nodo’ undeclared (first use in this function)
 sudoku.c:81:20: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 098e81d
+Thu 05 Oct 2023 02:58:45 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:81:23: error: invalid type argument of ‘->’ (have ‘int’)
+   81 |       printf("%d ",num->sudo[i][j]);
+      |                       ^~
+Compilation failed
+f438f49
