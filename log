@@ -332,3 +332,14 @@ sudoku.c:81:23: error: invalid type argument of ‘->’ (have ‘int’)
       |                       ^~
 Compilation failed
 f438f49
+Thu 05 Oct 2023 02:58:55 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:81:7: error: array subscript 9 is above array bounds of ‘int[9]’ [-Werror=array-bounds]
+   81 |       printf("%d ",n->sudo[i][j]);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+06c40a3
