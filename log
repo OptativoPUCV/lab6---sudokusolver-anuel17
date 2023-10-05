@@ -520,3 +520,15 @@ sudoku.c:129:18: error: the comparison will always evaluate as ‘true’ for th
 cc1: all warnings being treated as errors
 Compilation failed
 15a21f9
+Thu 05 Oct 2023 03:19:45 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:129:21: error: ‘false’ undeclared (first use in this function); did you mean ‘fclose’?
+  129 |   while(is_empty != false){
+      |                     ^~~~~
+      |                     fclose
+sudoku.c:129:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+995ea40

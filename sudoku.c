@@ -126,7 +126,7 @@ Node* DFS(Node* initial, int* cont){
   List* stack= createList();
   pushFront(stack,initial);
 
-  while(is_empty != 0){
+  while(is_empty != false){
     Node* actual = front(stack);
     popFront(stack);
     (*cont)++;
