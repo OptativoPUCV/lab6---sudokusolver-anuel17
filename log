@@ -565,3 +565,15 @@ sudoku.c:139:7: error: implicit declaration of function ‘poppFront’; did you
 cc1: all warnings being treated as errors
 Compilation failed
 46b8f0e
+Thu 05 Oct 2023 03:24:00 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:139:7: error: implicit declaration of function ‘poppFront’; did you mean ‘popFront’? [-Werror=implicit-function-declaration]
+  139 |       poppFront(adj_nodes);
+      |       ^~~~~~~~~
+      |       popFront
+cc1: all warnings being treated as errors
+Compilation failed
+e827ef8
