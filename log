@@ -343,3 +343,9 @@ sudoku.c:81:7: error: array subscript 9 is above array bounds of ‘int[9]’ [-
 cc1: all warnings being treated as errors
 Compilation failed
 06c40a3
+Thu 05 Oct 2023 02:59:57 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 35/70
+d06a6d5

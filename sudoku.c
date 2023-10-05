@@ -78,7 +78,7 @@ int is_valid(Node* n){
     for(int p=0;p<9;p++){
       int a=3*(k/3) + (p/3) ;
       int b=3*(k%3) + (p%3) ;
-      printf("%d ",n->sudo[i][j]);
+      printf("%d ",n->sudo[a][b]);
       if(p%3 == 2) printf("\n");
       num = n->sudo[a][b];
       if(num != 0){
