@@ -509,3 +509,14 @@ sudoku.c:132:5: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 2963611
+Thu 05 Oct 2023 03:19:19 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:129:18: error: the comparison will always evaluate as ‘true’ for the address of ‘is_empty’ will never be NULL [-Werror=address]
+  129 |   while(is_empty != 0){
+      |                  ^~
+cc1: all warnings being treated as errors
+Compilation failed
+15a21f9
