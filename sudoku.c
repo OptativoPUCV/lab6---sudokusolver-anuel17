@@ -131,6 +131,7 @@ Node* DFS(Node* initial, int* cont){
     popFront(stack);
     (*cont)++;
     if(is_final(actual)){
+      clean(stack);
       return actual;
     }
     List* adj_nodes = get_adj_nodes(actual);
