@@ -58,3 +58,28 @@ sudoku.c:62:20: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 b015bd0
+Thu 05 Oct 2023 01:37:23 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:56:12: error: expected expression before ‘<’ token
+   56 |       if(n-<sudo[i][j]==0){
+      |            ^
+sudoku.c:60:11: error: implicit declaration of function ‘insertFront’ [-Werror=implicit-function-declaration]
+   60 |           insertFront(list,copiaList);
+      |           ^~~~~~~~~~~
+sudoku.c:60:28: error: ‘copiaList’ undeclared (first use in this function); did you mean ‘copialist’?
+   60 |           insertFront(list,copiaList);
+      |                            ^~~~~~~~~
+      |                            copialist
+sudoku.c:60:28: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:62:20: error: expected ‘;’ before ‘}’ token
+   62 |         return list
+      |                    ^
+      |                    ;
+   63 |       }
+      |       ~             
+cc1: all warnings being treated as errors
+Compilation failed
+3d3341e
