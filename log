@@ -123,3 +123,14 @@ Thu 05 Oct 2023 01:45:01 AM UTC:
  tests:  2|4
 total_score: 15/70
 5ff9d6e
+Thu 05 Oct 2023 01:55:33 AM UTC: 
+ sudoku.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:48:14: error: expected ‘;’ before ‘:’ token
+   48 |   for(i=0;i<9:i++){
+      |              ^
+      |              ;
+Compilation failed
+f780f42
