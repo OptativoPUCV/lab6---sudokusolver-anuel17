@@ -83,3 +83,14 @@ sudoku.c:62:20: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 3d3341e
+Thu 05 Oct 2023 01:37:41 AM UTC: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:60:11: error: implicit declaration of function ‘insertFront’ [-Werror=implicit-function-declaration]
+   60 |           insertFront(list,copialist);
+      |           ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9e62944
