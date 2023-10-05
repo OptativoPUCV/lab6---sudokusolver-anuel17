@@ -139,6 +139,9 @@ Node* DFS(Node* initial, int* cont){
       popFront(adj_nodes);
       pushFront(stack,copia);
     }
+    free(actual);
+    clearList(adj_nodes);
+    free(adj_nodes);
   }
   
   return NULL;

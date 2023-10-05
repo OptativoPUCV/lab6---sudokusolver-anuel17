@@ -583,3 +583,15 @@ Thu 05 Oct 2023 03:24:05 AM UTC:
  tests:  10|0
 total_score: 70/70
 c8c11a0
+Thu 05 Oct 2023 03:25:03 AM UTC: 
+ sudoku.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:143:5: error: implicit declaration of function ‘clearList’; did you mean ‘createList’? [-Werror=implicit-function-declaration]
+  143 |     clearList(adj_nodes);
+      |     ^~~~~~~~~
+      |     createList
+cc1: all warnings being treated as errors
+Compilation failed
+260d17f
